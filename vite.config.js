@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
-
 export default defineConfig({
     base: '/qurbana/',
     plugins: [
@@ -34,10 +33,10 @@ export default defineConfig({
                 theme_color: '#0d0d0d',
                 background_color: '#0d0d0d',
                 display: 'standalone',
-                start_url: '/',
+                start_url: '/qurbana/',
                 icons: [
-                    { src: '/icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
-                    { src: '/icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' }
+                    { src: 'icons/icon-192.svg', sizes: '192x192', type: 'image/svg+xml' },
+                    { src: 'icons/icon-512.svg', sizes: '512x512', type: 'image/svg+xml', purpose: 'any maskable' }
                 ]
             }
         })
